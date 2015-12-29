@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company companyName="15C" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema police.xsd ">
+	<platoon platoonName ="1stP">1소대
+		<squad squadName="1stS">1분대
+			<policeMan policeId="p1">
+				<Name>김동석</Name>
+				<age>41</age>
+				<Height>184</Height>
+				<Weight>80</Weight>
+				<Class>경위</Class>
+				<Date>2025</Date>
+			</policeMan>
+		</squad>         
+		<squad squadName="2ndS">2분대
+			<policeMan policeId="p2">
+				<Name>임종래</Name>
+				<age>42</age>
+				<Height>176</Height>
+				<Weight>83</Weight>
+				<Class>경장</Class>
+				<Date>2035</Date>
+			</policeMan>
+		</squad>
+		<squad squadName="3rdS">3분대
+			<policeMan policeId="p3">
+				<Name>조재현</Name>
+				<Height>168</Height>
+				<Weight>62</Weight>
+				<Class>경사</Class>
+				<Date>2036</Date>
+			</policeMan>
+		</squad>
+	</platoon>
+	<platoon platoonName ="2ndP">2소대
+		<squad squadName = "1stS">1분대
+			<policeMan policeId="p4">
+				<Name>고경석</Name>
+				<Height>172</Height>
+				<Weight>73</Weight>
+				<Class>경위</Class>
+				<Date>2027</Date>
+			</policeMan>
+		</squad>
+	</platoon>
+		<squad squadName = "2ndS">2분대
+			<policeMan policeId="p5">
+				<Name>이동수</Name>
+				<age>37</age>
+				<Height>169</Height>
+				<Weight>65</Weight>
+				<Class>경사</Class>
+				<Date>2037</Date>
+			</policeMan>
+		</squad>
+		<squad squadName = "3rdS">3분대
+			<policeMan policeId="p6">
+				<Name>오주한</Name>
+				<Height>173</Height>
+				<Weight>72</Weight>
+				<Class>경감</Class>
+				<Date>2023</Date>
+			</policeMan>
+		</squad>
+	<platoon platoonName="3ndP">3소대
+		<squad squadName="1stS">1분대
+			<policeMan policeId="p7">
+				<Name>이재인</Name>
+				<Height>171</Height>
+				<Weight>63</Weight>
+				<Class>경장</Class>
+				<Date>2034</Date>
+			</policeMan>
+		</squad>
+		<squad squadName="2ndS">2분대
+			<policeMan policeId="p8">
+				<Name>임동현</Name>
+				<age>45</age>
+				<Height>171</Height>
+				<Weight>70</Weight>
+				<Class>경위</Class>
+				<Date>2028</Date>
+			</policeMan>
+		</squad>
+		<squad squadName="3rdS">3분대
+			<policeMan policeId="p9">
+				<Name>김선홍</Name>
+				<age>47</age>
+				<Height>181</Height>
+				<Weight>72</Weight>
+				<Class>경감</Class>
+				<Date>2023</Date>
+			</policeMan>
+		</squad>
+	</platoon>
+</company>
