@@ -86,6 +86,10 @@ public class MediaControl extends BorderPane {
     private HBox mediaBar2;  //TopBox
     private HBox radioBox1;  
     private HBox radioBox2;  
+    private HBox radioBox3;
+    private HBox radioBox4;
+    
+    private HBox buttonBox;
     private VBox radioBar;//RightSideBox
     public MediaControl(final MediaPlayer mp ) {
         this.mp = mp;
@@ -101,6 +105,9 @@ public class MediaControl extends BorderPane {
         mediaBar2 = new HBox();
         radioBox1 = new HBox();
         radioBox2 = new HBox();
+        radioBox3 = new HBox();
+        radioBox4 = new HBox();
+        buttonBox = new HBox();
         radioBar = new VBox();
         
         mediaBar1.setAlignment(Pos.CENTER_LEFT);
@@ -112,6 +119,9 @@ public class MediaControl extends BorderPane {
         
         radioBox1.setPadding(new Insets(5, 10, 5, 10));
         radioBox2.setPadding(new Insets(5, 10, 5, 10));
+        radioBox3.setPadding(new Insets(5, 10, 5, 10));
+        radioBox4.setPadding(new Insets(5, 10, 5, 10));
+        buttonBox.setPadding(new Insets(5, 10, 5, 10));
         radioBar.setPadding(new Insets(5, 10, 5, 10));
         radioBar.setMinWidth(300);
         
@@ -285,6 +295,37 @@ public class MediaControl extends BorderPane {
         	radioBox2.setSpacing(10);
         }
         radioBar.getChildren().add(radioBox2);	
+        
+        ToggleGroup vibrationButtonGroup = new ToggleGroup();
+        for(EWindButtons eButton:EWindButtons.values()){
+        	
+        	RadioButton button = new RadioButton(eButton.getName());
+        	button.setToggleGroup(vibrationButtonGroup);
+        	button.setBorder(getBorder()); 	
+        	radioBox3.getChildren().add(button);
+        	radioBox3.setSpacing(10);
+        }
+        radioBar.getChildren().add(radioBox3);
+        
+        ToggleGroup scentButtonGroup = new ToggleGroup();
+        for(EWindButtons eButton:EWindButtons.values()){
+        	
+        	RadioButton button = new RadioButton(eButton.getName());
+        	button.setToggleGroup(scentButtonGroup);
+        	button.setBorder(getBorder()); 	
+        	radioBox4.getChildren().add(button);
+        	radioBox4.setSpacing(10);
+        }
+        radioBar.getChildren().add(radioBox4);
+        
+        Button startButton = new Button("start");
+        Button endButton = new Button("end");
+        buttonBox.getChildren().add(startButton);
+        buttonBox.setSpacing(10);
+        buttonBox.getChildren().add(endButton);
+        radioBar.getChildren().add(buttonBox);
+        
+        
         
         setTop(mediaBar2);
         setBottom(mediaBar1);
