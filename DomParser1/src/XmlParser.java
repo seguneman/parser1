@@ -23,7 +23,7 @@ public class XmlParser {
 
     public static void main(String[] args) {
         String xmlString = "";
-        File file = new File("C:\\Users\\chopin\\workspace\\DomParser1\\src\\police.xml");
+        File file = new File("C:\\Users\\chopin\\workspace\\DomParser5\\src\\police.xml");
         XmlParser xmlParser = new XmlParser(xmlString);
         xmlParser = new XmlParser(file);
         
@@ -76,14 +76,14 @@ public class XmlParser {
                 return result;
             }
 
-            this.parseXMLNode(tempNodeList, result);
+            //this.parseXMLNode(tempNodeList, result);
             return result;
         } catch (Exception ex) {
             ex.printStackTrace();
             return null;
         }
     }
-
+/*
     private void parseXMLNode(NodeList nList, HashMap result) {
         for (int temp = 0; temp < nList.getLength(); temp++) {
             Node nNode = nList.item(temp);
@@ -171,7 +171,7 @@ public class XmlParser {
             result.put(nNode.getNodeName(), putNode);
         }
     }
-
+*/
     class MyNodeList implements NodeList {
         List<Node> nodes = new ArrayList<Node>();
         int length = 0;
@@ -206,12 +206,12 @@ public class XmlParser {
             String key = pairs.getKey().toString();
             Object value = pairs.getValue();
             if (value instanceof Map) {
-                System.out.println(getTab(tab)+ "<"+ key +">");
+                System.out.println(getTab(tab)+ "<"+ key +">@");
                 print((Map) value, tab + 1);
                 System.out.println(getTab(tab)+ "</"+key+ ">");
             }
             else if (value instanceof List) {
-                System.out.println(getTab(tab) +"<"+ key +">");
+                System.out.println(getTab(tab) +"<"+ key +">$");
                 print((List) value, tab + 1);
                 System.out.println(getTab(tab) + "</"+key+">");
             }

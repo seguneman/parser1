@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <company companyName="15C" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema police.xsd ">
-	<platoon platoonName ="1stP">1소대
-		<squad squadName="1stS">1분대
+	<platoon platoonName ="1stP">
+		<squad squadName="1stS">
 			<policeMan policeId="p1">
 				<Name>김동석</Name>
 				<age>41</age>
@@ -11,7 +11,7 @@
 				<Date>2025</Date>
 			</policeMan>
 		</squad>         
-		<squad squadName="2ndS">2분대
+		<squad squadName="2ndS">
 			<policeMan policeId="p2">
 				<Name>임종래</Name>
 				<age>42</age>
@@ -21,7 +21,7 @@
 				<Date>2035</Date>
 			</policeMan>
 		</squad>
-		<squad squadName="3rdS">3분대
+		<squad squadName="3rdS">
 			<policeMan policeId="p3">
 				<Name>조재현</Name>
 				<Height>168</Height>
@@ -31,8 +31,8 @@
 			</policeMan>
 		</squad>
 	</platoon>
-	<platoon platoonName ="2ndP">2소대
-		<squad squadName = "1stS">1분대
+	<platoon platoonName ="2ndP">
+		<squad squadName = "1stS">
 			<policeMan policeId="p4">
 				<Name>고경석</Name>
 				<Height>172</Height>
@@ -41,8 +41,7 @@
 				<Date>2027</Date>
 			</policeMan>
 		</squad>
-	</platoon>
-		<squad squadName = "2ndS">2분대
+		<squad squadName = "2ndS">
 			<policeMan policeId="p5">
 				<Name>이동수</Name>
 				<age>37</age>
@@ -52,7 +51,7 @@
 				<Date>2037</Date>
 			</policeMan>
 		</squad>
-		<squad squadName = "3rdS">3분대
+		<squad squadName = "3rdS">
 			<policeMan policeId="p6">
 				<Name>오주한</Name>
 				<Height>173</Height>
@@ -61,8 +60,9 @@
 				<Date>2023</Date>
 			</policeMan>
 		</squad>
-	<platoon platoonName="3ndP">3소대
-		<squad squadName="1stS">1분대
+	</platoon>
+	<platoon platoonName="3ndP">
+		<squad squadName="1stS">
 			<policeMan policeId="p7">
 				<Name>이재인</Name>
 				<Height>171</Height>
@@ -71,7 +71,7 @@
 				<Date>2034</Date>
 			</policeMan>
 		</squad>
-		<squad squadName="2ndS">2분대
+		<squad squadName="2ndS">
 			<policeMan policeId="p8">
 				<Name>임동현</Name>
 				<age>45</age>
@@ -81,7 +81,7 @@
 				<Date>2028</Date>
 			</policeMan>
 		</squad>
-		<squad squadName="3rdS">3분대
+		<squad squadName="3rdS">
 			<policeMan policeId="p9">
 				<Name>김선홍</Name>
 				<age>47</age>
